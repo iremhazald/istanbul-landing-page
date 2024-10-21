@@ -32,7 +32,6 @@ h4 {
 
 header h1 {
   font-size: 65px;
-
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -40,12 +39,28 @@ header h1 {
 }
 
 header h3 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue", sans-serif !important;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
+  font-size: 30px;
 }
 
+main .box2 h3 {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #bfbdc7 !important;
+  margin-top: 1%;
+  text-align: left;
+}
+
+main .box2 h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 header h4 {
   font-size: 18px;
 }
@@ -54,6 +69,7 @@ main {
   margin-top: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 10%;
 }
 
 main .box2 h3 {
@@ -63,14 +79,34 @@ main .box2 h3 {
   font-style: normal;
 }
 
+main .box2 p {
+  text-align: justify;
+}
 main img {
-  width: 420px;
-  height: 509px;
+  width: 370px;
+  height: 440px;
   border-radius: 10px;
 }
 
 article .introHistory {
   text-align: center;
+  margin-bottom: 5%;
+}
+
+article .introHistory h4 {
+  color: #bfbdc7 !important;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+article .introHistory h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 36px;
 }
 
 article .places {
