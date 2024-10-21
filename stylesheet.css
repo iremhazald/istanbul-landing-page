@@ -144,11 +144,12 @@ summary .pictures .picBox {
 
 footer {
   margin-top: 10%;
-  background: linear-gradient(rgba(24, 1, 32, 0.7), rgba(24, 1, 32, 0.7)),
+  background: linear-gradient(rgba(24, 1, 32, 0.8), rgba(24, 1, 32, 0.8)),
     url(/images/pexels-julien-goettelmann-44396125-28966545.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 5%;
 }
 
 footer p {
@@ -160,11 +161,32 @@ footer .footerBoxes {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+footer .footerBoxes h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.options {
+  margin-left: 26% !important;
+  margin-top: -2% !important;
+}
+
+.options p:hover {
+  color: rgb(222, 222, 89);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .footerBoxes p {
+  font-size: 12px;
+  color: #bfbdc7;
+}
 footer .footerBoxes .footerBox1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: justify;
   padding: 10px 20px;
 }
@@ -203,6 +225,11 @@ nav {
   width: 400px;
   cursor: pointer;
   font-size: 18px;
+}
+
+.links a:hover {
+  cursor: pointer;
+  color: rgb(222, 222, 89);
 }
 
 article {
