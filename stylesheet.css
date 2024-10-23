@@ -150,15 +150,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer p {
   color: whitesmoke;
-}
-
-footer .footerBoxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer .footerBoxes h3 {
@@ -184,11 +181,12 @@ footer .footerBoxes p {
   font-size: 12px;
   color: #bfbdc7;
 }
+
 footer .footerBoxes .footerBox1 {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  padding: 10px 20px;
+  padding: 10px 40px;
 }
 
 nav {
@@ -225,11 +223,39 @@ nav {
   width: 400px;
   cursor: pointer;
   font-size: 18px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.links a {
+  cursor: pointer;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .links a:hover {
   cursor: pointer;
   color: rgb(222, 222, 89);
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#mynavtoggle {
+  display: none;
+  border: none;
+  background: none;
+  transition: 0.5s;
+  color: whitesmoke;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+#mynavtoggle:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 article {
@@ -304,16 +330,7 @@ button {
   .container {
     width: 100%;
     height: 100%;
-    padding: 0 15px;
-  }
-
-  header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(53, 52, 54, 0.4)),
-      url(images/pexels-selcuk-teke-393955-3684396.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 17%;
+    padding: 0 25px;
   }
 
   header h1,
@@ -325,16 +342,9 @@ button {
 
   header h1 {
     font-size: 25px !important;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
   }
 
   header h3 {
-    font-family: "Bebas Neue", sans-serif !important;
-    font-weight: 400;
-    font-style: normal;
     font-size: 15px;
   }
 
@@ -342,7 +352,7 @@ button {
     font-size: 7px;
   }
 
-  main .box2 h3 {
+  .mainH {
     font-family: "Bebas Neue", sans-serif !important;
     font-weight: 400;
     font-style: normal;
@@ -352,26 +362,38 @@ button {
     text-align: left;
   }
 
+  main .box2 h3 {
+    display: none;
+  }
+
   main .box2 h2 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    font-size: 18px;
+    text-align: center;
   }
 
   main {
-    margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 10%;
+  }
+
+  main .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   main .box2 p {
     text-align: justify;
+    font-size: 13px;
+  }
+
+  .mainH {
+    display: block;
   }
   main img {
-    width: 370px;
-    height: 440px;
+    width: 300px;
+    height: 370px;
     border-radius: 10px;
   }
   article .introHistory {
@@ -380,19 +402,11 @@ button {
   }
 
   article .introHistory h4 {
-    color: #bfbdc7 !important;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 18px;
   }
 
   article .introHistory h2 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 42px;
+    font-size: 20px;
   }
 
   article .places {
@@ -405,15 +419,11 @@ button {
   }
 
   summary .introSummary h2 {
-    font-size: 42px;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    font-size: 20px;
   }
   summary .pictures .picBox .pic {
-    width: 350px;
-    height: 450px;
+    width: 280px;
+    height: 370px;
   }
 
   summary .pictures {
@@ -429,17 +439,22 @@ button {
   }
 
   footer {
-    margin-top: 10%;
     background: linear-gradient(rgba(7, 47, 72, 0.8), rgba(7, 47, 72, 0.8)),
       url(/images/pexels-julien-goettelmann-44396125-28966545.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   footer p {
-    color: whitesmoke;
+    font-size: 12px;
+    color: #bfbdc7;
+    text-align: center;
   }
 
   footer .footerBoxes {
@@ -447,17 +462,19 @@ button {
     grid-template-columns: 1fr;
   }
 
-  footer .footerBoxes h3 {
+  footer .footerBox1 h3 {
+    font-size: 20px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 18px;
   }
 
   .options {
-    margin-left: 26% !important;
-    margin-top: -2% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .options p:hover {
@@ -469,12 +486,12 @@ button {
   footer .footerBoxes p {
     font-size: 12px;
     color: #bfbdc7;
+    text-align: center;
   }
   footer .footerBoxes .footerBox1 {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px 20px;
   }
 
   nav {
@@ -518,20 +535,15 @@ button {
     color: rgb(222, 222, 89);
   }
 
-  article {
-    margin-bottom: 10%;
-  }
-
-  .place1 {
-    padding: 0 20px;
-  }
-
   .text p {
     text-align: justify;
+    font-size: 14px;
   }
 
   .text h2 {
     text-align: center;
+    font-size: 16px;
+    margin-top: 15% !important;
   }
 
   .text h4 {
@@ -541,14 +553,17 @@ button {
   }
 
   .adress {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .images {
-    height: 160px;
-    width: 350px;
+    height: 120px;
+    width: 300px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%; /*BURAYA TEKRAR BAK*/
   }
 
   .images .pb {
@@ -557,8 +572,8 @@ button {
   }
 
   .images .pb img {
-    width: 175px;
-    height: 160px;
+    width: 150px;
+    height: 130px;
   }
   .btn {
     display: flex;
@@ -573,9 +588,8 @@ button {
     font-family: "Bebas Neue", sans-serif !important;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
-    margin: 10px 0;
   }
 
   .introSummary h3 {
@@ -584,5 +598,60 @@ button {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+  }
+
+  .navBoxes1 {
+    width: 100%;
+  }
+
+  .navBoxes2 {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    padding-left: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .openLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #212825;
+    text-decoration: none !important;
+    color: whitesmoke !important;
+    position: absolute;
+    right: 20px; /* Align with the button */
+    top: 60px; /* Just below the navbar */
+    padding: 10px;
+  }
+
+  .openLinks a {
+    text-decoration: none !important;
+    color: whitesmoke !important;
+  }
+
+  .navIcon {
+    display: block;
+    margin-left: -80%;
+  }
+
+  #mynavtoggle {
+    display: block;
+  }
+
+  #mynavtoggle i {
+    margin-left: 75%;
+    color: whitesmoke;
   }
 }
