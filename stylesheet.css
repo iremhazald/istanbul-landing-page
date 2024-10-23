@@ -323,7 +323,7 @@ button {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .container {
     width: 100%;
     height: 100%;
@@ -486,47 +486,6 @@ button {
     text-align: justify;
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3%;
-  }
-
-  .navBoxes1 {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    background-color: #212825;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: rgb(219, 201, 201);
-  }
-
-  .navBoxes2 {
-    width: 50%;
-    background-color: #212825 !important;
-  }
-
-  .links {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 400px;
-    cursor: pointer;
-    font-size: 18px;
-  }
-
-  .links a:hover {
-    cursor: pointer;
-    color: rgb(222, 222, 89);
-  }
-
   .text p {
     text-align: justify;
     font-size: 14px;
@@ -645,5 +604,234 @@ button {
   #mynavtoggle i {
     margin-left: 75%;
     color: whitesmoke;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .navBoxes1 {
+    width: 100%;
+  }
+
+  .navBoxes2 {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    padding-left: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .openLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #212825;
+    text-decoration: none !important;
+    color: whitesmoke !important;
+    position: absolute;
+    right: 20px; /* Align with the button */
+    top: 60px; /* Just below the navbar */
+    padding: 10px;
+  }
+
+  .openLinks a {
+    text-decoration: none !important;
+    color: whitesmoke !important;
+  }
+
+  .navIcon {
+    display: block;
+    margin-left: -80%;
+  }
+
+  #mynavtoggle {
+    display: block;
+  }
+
+  #mynavtoggle i {
+    margin-left: 75%;
+    color: whitesmoke;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  }
+
+  header h1 {
+    font-size: 40px !important;
+  }
+
+  header h3 {
+    font-size: 20px;
+  }
+
+  header h4 {
+    font-size: 12px;
+  }
+
+  .mainH {
+    font-family: "Bebas Neue", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #bfbdc7 !important;
+    margin-top: 1%;
+    text-align: left;
+  }
+
+  main .box2 h3 {
+    display: none;
+  }
+
+  main .box2 h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  main .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main .box2 p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .mainH {
+    display: block;
+  }
+  main img {
+    width: 350px;
+    height: 440px;
+    border-radius: 10px;
+  }
+
+  article .introHistory {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  article .introHistory h4 {
+    font-size: 20px;
+  }
+
+  article .introHistory h2 {
+    font-size: 22px;
+  }
+
+  article .places {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .text p {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .text h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15% !important;
+  }
+
+  .text h4 {
+    color: black;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .adress {
+    font-size: 14px;
+  }
+
+  .images {
+    height: 250px;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%; /*BURAYA TEKRAR BAK*/
+  }
+
+  .images .pb {
+    width: 50%;
+    height: 50%;
+  }
+
+  .images .pb img {
+    width: 275px;
+    height: 250px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    width: 100%;
+    height: 50px;
+    background-color: #212825;
+    color: whitesmoke;
+    font-family: "Bebas Neue", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .introSummary h3 {
+    color: #bfbdc7 !important;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+  }
+
+  summary .introSummary {
+    text-align: center;
+  }
+
+  summary .introSummary h2 {
+    font-size: 20px;
+  }
+  summary .pictures .picBox .pic {
+    width: 350px;
+    height: 475px;
+  }
+
+  summary .pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  summary .pictures .picBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
