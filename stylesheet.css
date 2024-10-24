@@ -129,11 +129,13 @@ summary .introSummary h2 {
   font-weight: weight;
   font-style: normal;
 }
-summary .pictures .picBox .pic {
+summary .pictures .picBox iframe {
   width: 350px;
   height: 450px;
 }
-
+summary .pictures .picBox {
+  padding: 0 20px;
+}
 summary .pictures {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -306,13 +308,22 @@ button {
   width: 100%;
   height: 50px;
   background-color: #212825;
-  color: whitesmoke;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button a {
   font-family: "Bebas Neue", sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  cursor: pointer;
-  margin: 10px 0;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+button a:visited {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .introSummary h3 {
@@ -418,9 +429,13 @@ button {
   summary .introSummary h2 {
     font-size: 20px;
   }
-  summary .pictures .picBox .pic {
-    width: 280px;
-    height: 370px;
+  summary .pictures .picBox iframe {
+    width: 150px !important;
+    height: 500px !important;
+  }
+
+  summary .pictures .picBox {
+    padding: 10px 10px;
   }
 
   summary .pictures {
@@ -523,6 +538,11 @@ button {
   }
 
   .images .pb img {
+    width: 150px;
+    height: 130px;
+  }
+
+  .images .pb iframe {
     width: 150px;
     height: 130px;
   }
@@ -782,6 +802,11 @@ button {
     height: 50%;
   }
 
+  .images .pb iframe {
+    width: 275px;
+    height: 250px;
+  }
+
   .images .pb img {
     width: 275px;
     height: 250px;
@@ -799,8 +824,21 @@ button {
     font-family: "Bebas Neue", sans-serif !important;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
     cursor: pointer;
+  }
+
+  button a {
+    font-family: "Bebas Neue", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  button a:visited {
+    color: whitesmoke;
+    text-decoration: none;
   }
 
   .introSummary h3 {
@@ -818,9 +856,13 @@ button {
   summary .introSummary h2 {
     font-size: 20px;
   }
-  summary .pictures .picBox .pic {
-    width: 350px;
-    height: 475px;
+  summary .pictures .picBox iframe {
+    width: 350px !important;
+    height: 475px !important;
+  }
+
+  summary .pictures .picBox {
+    padding: 15px 15px;
   }
 
   summary .pictures {
